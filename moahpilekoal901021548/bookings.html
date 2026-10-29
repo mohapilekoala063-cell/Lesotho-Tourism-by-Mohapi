@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesotho Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body> 
+<div class="body-wrapper"> 
+    <header class="container text-center py-4"> 
+    
+    <section id="nav"> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm rounded mb-4"> 
+            <div class="container"> 
+                <a class="navbar-brand fw-bold" href="index.html">LESOTHO TOURISM</a> 
+
+                <button class="navbar-toggler" type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#mainMenu" 
+                        aria-controls="mainMenu" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button> 
+
+                <div class="collapse navbar-collapse" id="mainMenu">  
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="index.html">Home</a> 
+                        </li> 
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="about.html">About</a> 
+                        </li> 
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="services.html">Services</a> 
+                        </li> 
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="gallery.html">Gallery</a> 
+                        </li> 
+                                             
+                               </li> 
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="contact.html">Contact</a> 
+                        </li> 
+
+                        <li class="nav-item"> 
+                            <a class="nav-link active btn btn-primary text-white px-3 ms-lg-2" href="bookings.html">Book us Now</a> 
+                        </li> 
+                    </ul> 
+                </div> 
+            </div> 
+        </nav> 
+    </section> 
+
+          </section> 
+              <div class=""> 
+                    <h3 class="h5 fw-bold text-white">BOOK YOUR TOUR NOW</h3> 
+                    <p class="text-white">WELCOME</p> 
+                </div> 
+
+
+          
+
+
+    <section class="py-5">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="card shadow-sm border-0 p-4 p-md-5 w-100" style="max-width: 650px;">
+    
+                <div id="alertBox" class="alert d-none" role="alert"></div>
+                
+                <form id="bookingForm">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label fw-semibold">FullName:</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light"><i class="bi bi-person-fill"></i></span>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-semibold">Email:</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light"><i class="bi bi-envelope-fill"></i></span>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label fw-semibold">Phone Number:</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light"><i class="bi bi-telephone-fill"></i></span>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold d-block">Gender:</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="other" value="Other">
+                            <label class="form-check-label" for="other">Other</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">  
+<label for="studentProgramme" class="form-label">Number of Members to be expected:</label>  
+            <select class="form-select" id="studentProgramme">  
+                          <option selected>----------select---------</option>  
+                        <option>2</option>  
+                           <option>3</option>  
+                            <option>4</option>  
+                            <option>5</option>  
+            </select>  
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label fw-semibold">Password:</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light"><i class="bi bi-lock-fill"></i></span>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password (min 6 chars)" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="confirmPassword" class="form-label fw-semibold">Confirm Password:</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light"><i class="bi bi-lock-fill"></i></span>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold mb-3">SUBMIT</button>
+                    <p class="text-black text-center fw-semibold mb-4">You will get a call after submission</p>
+                </form>
+            </div>
+        </div>
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+     <footer class="gallery-footer text-center text-white py-3 mt-4">
+        <p class="mb-0">
+            &copy; 2026 Lesotho Tourism. Discover the Mountain Kingdom.
+        </p>
+           <p class="mb-0">BY: MOHAPI LEKOALA</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
